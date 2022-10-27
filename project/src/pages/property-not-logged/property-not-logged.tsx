@@ -118,8 +118,7 @@ function PropertyNotLoggedScreen(): JSX.Element {
                 <h2 className="property__host-title">Meet the host</h2>
                 <div className="property__host-user user">
                   <div className="property__avatar-wrapper property__avatar-wrapper--pro user__avatar-wrapper">
-                    <img className="property__avatar user__avatar" src="img/avatar-angelina.jpg" width="74" height="74"
-                         alt="Host avatar"/>
+                    <img className="property__avatar user__avatar" src="img/avatar-angelina.jpg" width="74" height="74" alt="Host avatar"/>
                   </div>
                   <span className="property__user-name">
                     Angelina
@@ -204,8 +203,7 @@ function PropertyNotLoggedScreen(): JSX.Element {
               <article className="near-places__card place-card">
                 <div className="near-places__image-wrapper place-card__image-wrapper">
                   <a href="#">
-                    <img className="place-card__image" src="img/apartment-02.jpg" width="260" height="200"
-                         alt="Place image"/>
+                    <img className="place-card__image" src="img/apartment-02.jpg" width="260" height="200" alt="Place image"/>
                   </a>
                 </div>
                 <div className="place-card__info">
@@ -234,8 +232,7 @@ function PropertyNotLoggedScreen(): JSX.Element {
                 </div>
                 <div className="near-places__image-wrapper place-card__image-wrapper">
                   <a href="#">
-                    <img className="place-card__image" src="img/apartment-03.jpg" width="260" height="200"
-                         alt="Place image"/>
+                    <img className="place-card__image" src="img/apartment-03.jpg" width="260" height="200" alt="Place image"/>
                   </a>
                 </div>
                 <div className="place-card__info">

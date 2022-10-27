@@ -1,13 +1,13 @@
 import MainScreen from '../../pages/main/main';
 
 type AppProps = {
-  errorsCount: number;
+  offers: number;
 }
 
-function App({errorsCount}: AppProps): JSX.Element {
+function App({offers}: AppProps): JSX.Element {
   return (
 
-    <MainScreen errorsCount={4}/>
+    <MainScreen offers={offers}/>
 
   );
 }
