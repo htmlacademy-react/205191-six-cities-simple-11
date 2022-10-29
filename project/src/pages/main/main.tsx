@@ -1,4 +1,4 @@
-import Card from '../../components/Card/Card';
+import Card from '../../components/card/card';
 
 type MainScreenProps = {
   offers: number;
@@ -12,7 +12,7 @@ function MainScreen({offers}: MainScreenProps): JSX.Element {
           <div className="header__wrapper">
             <div className="header__left">
               <a className="header__logo-link header__logo-link--active">
-                <img className="header__logo" src="img/logo.svg" alt="6 cities logo" width="81" height="41"/>
+                <img className="header__logo" src="/img/logo.svg" alt="6 cities logo" width="81" height="41"/>
               </a>
             </div>
             <nav className="header__nav">
@@ -90,7 +90,6 @@ function MainScreen({offers}: MainScreenProps): JSX.Element {
                 </ul>
               </form>
               <div className="cities__places-list places__list tabs__content">
-                <Card/>
                 <Card/>
                 <Card/>
                 <Card/>
