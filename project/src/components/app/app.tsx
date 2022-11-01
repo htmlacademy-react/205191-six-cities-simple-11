@@ -1,8 +1,8 @@
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
-import MainScreen from "../../pages/main-screen/main-screen";
-import Login from "../../pages/login/login";
-import PropertyScreen from "../../pages/property/property";
-import PageNotScreen from "../../pages/pagenot/PageNotScreen";
+import MainScreen from '../../pages/main-screen/main-screen';
+import Login from '../../pages/login/login';
+import PropertyScreen from '../../pages/property/property';
+import PageNotScreen from '../../pages/pagenot/PageNotScreen';
 import {AppRoute} from '../../const';
 
 type AppProps = {
