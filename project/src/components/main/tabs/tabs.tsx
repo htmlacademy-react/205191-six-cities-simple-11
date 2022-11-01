@@ -36,8 +36,7 @@ function Tabs() {
         </ul>
       </section>
     </div>
-
-  )
+  );
 }
 
 export default Tabs;

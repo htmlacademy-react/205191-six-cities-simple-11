@@ -1,10 +1,13 @@
-import Offer from "../../../offer-header/offer-header";
+import offersMock from "../../../../mocks/offers";
+import Offer from "./offer/offer";
 
 function ListOffers() {
   return (
     <div className="cities__places-list places__list tabs__content">
-      {offers.map((offer) => {}}
-      <Offer/>
+      {offersMock.map((item) => {
+        <Offer/>
+      }}
+
     </div>
 
   )

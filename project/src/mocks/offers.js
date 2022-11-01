@@ -1,0 +1,52 @@
+const offersMock = [
+  {
+    id: 1,
+    title: 'Beautiful & luxurious apartment at great location',
+    image: 'apartment-01',
+    imageExtension: 'jpg',
+    type: 'Apartment',
+    price: 120,
+    currency: '€',
+    rating: 93,
+    isPremium: true,
+    coords: [52.3909553943508, 4.85309666406198]
+  },
+  {
+    id: 2,
+    title: 'Wood and stone place',
+    image: 'room',
+    imageExtension: 'jpg',
+    type: 'Private room',
+    price: 80,
+    currency: '€',
+    rating: 80,
+    isPremium: false,
+    coords: [52.369553943508, 4.85309666406198]
+  },
+  {
+    id: 3,
+    title: 'Canal View Prinsengracht',
+    image: 'apartment-02',
+    imageExtension: 'jpg',
+    type: 'Apartment',
+    price: 132,
+    currency: '€',
+    rating: 80,
+    isPremium: false,
+    coords: [52.3909553943508, 4.929309666406198]
+  },
+  {
+    id: 4,
+    title: 'Nice, cozy, warm big bed apartment',
+    image: 'apartment-03',
+    imageExtension: 'jpg',
+    type: 'Apartment',
+    price: 180,
+    currency: '€',
+    rating: 100,
+    isPremium: true,
+    coords: [52.3809553943508, 4.939309666406198]
+  }
+];
+
+export default offersMock;
