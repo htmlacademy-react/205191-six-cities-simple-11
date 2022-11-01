@@ -1,6 +1,6 @@
 import Sorting from './sorting/sorting';
 import Map from './map/map';
-import ListOffers from './list-offer/list-offers';
+import ListOffers from './list-offers/list-offers';
 
 function Cities({offers}) {
   return (
