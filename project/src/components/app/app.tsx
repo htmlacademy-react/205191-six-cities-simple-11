@@ -1,9 +1,9 @@
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import {AppRoute} from '../../const';
-import MainScreen from '../../pages/main/main';
+import MainScreen from '../../pages/main-screen/main-screen';
 import Login from '../../pages/login/login';
 import PropertyScreen from '../../pages/property/property';
-import PageNotScreen from '../../pages/pagenot/PageNotScreen';
+import PageNotScreen from '../../pages/page-not-found/page-not-found';
 
 type AppProps = {
   offers: number;
@@ -31,9 +31,8 @@ function App({offers}: AppProps): JSX.Element {
         />
       </Routes>
     </BrowserRouter>
-
-
   );
 }
 
 export default App;
+

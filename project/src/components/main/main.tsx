@@ -5,12 +5,12 @@ type MainProps = {
   offers: number;
 }
 
-function Main() {
+function Main({offers}: MainProps) {
   return (
     <main className="page__main page__main--index">
       <h1 className="visually-hidden">Cities</h1>
       <Tabs/>
-      <Cities/>
+      <Cities offers={offers}/>
     </main>
   );
 }

@@ -2,7 +2,11 @@ import Sorting from './sorting/sorting';
 import Map from './map/map';
 import ListOffers from './list-offers/list-offers';
 
-function Cities({offers}) {
+type CitiesProps = {
+  offers: number;
+}
+
+function Cities({offers}: CitiesProps) {
   return (
     <div className="cities">
       <div className="cities__places-container container">
