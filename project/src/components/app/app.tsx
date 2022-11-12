@@ -1,36 +1,34 @@
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
-import MainScreen from '../../pages/main-screen/main-screen';
-import Login from '../../pages/login/login';
-import PropertyScreen from '../../pages/property/property';
-import PageNotScreen from '../../pages/page-not-found/page-not-found';
+import {HelmetProvider} from 'react-helmet-async';
 import {AppRoute} from '../../const';
+import MainPage from '../../pages/main-page/main-page';
+import LoginPage from '../../pages/login-page/login-page';
+import OffersPage from '../../pages/offers-page/offers-page';
+import PageNotPage from '../../pages/not-found/not-found';
+import ScrollToTop from '../scroll-to-top/scroll-to-top';
+import {ReviewsType} from '../../types/types-reviews';
+import {OffersType} from '../../types/types-offers';
+import {CitiesType} from '../../types/types-cities';
 
 type AppProps = {
-  offers: number;
+  offers: OffersType;
+  reviews: ReviewsType;
+  cities: CitiesType;
 }
 
-function App({offers}: AppProps): JSX.Element {
+function App({offers, reviews, cities}: AppProps): JSX.Element {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route
-          path={AppRoute.Main}
-          element={<MainScreen offers={offers}/>}
-        />
-        <Route
-          path={AppRoute.Login}
-          element={<Login/>}
-        />
-        <Route
-          path={AppRoute.Room}
-          element={<PropertyScreen/>}
-        />
-        <Route
-          path={'*'}
-          element={<PageNotScreen/>}
-        />
-      </Routes>
-    </BrowserRouter>
+    <HelmetProvider>
+      <BrowserRouter>
+        <ScrollToTop/>
+        <Routes>
+          <Route path={AppRoute.Main} element={<MainPage offers={offers} cities={cities}/>}/>
+          <Route path={AppRoute.Login} element={<LoginPage/>}/>
+          <Route path={`${AppRoute.Room}/:id`} element={<OffersPage offers={offers} reviews={reviews}/>}/>
+          <Route path={'*'} element={<PageNotPage/>}/>
+        </Routes>
+      </BrowserRouter>
+    </HelmetProvider>
   );
 }
 
